@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #333;
+    color: #fff;
+    padding: 0%;
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+justify-content: center;
+  }
+  .item {
+    margin-right: 30px;
+  }
+  .navbar-toggle{
+    color: rgba(249, 255, 255, 0.766);
+    background-color: rgba(0, 255, 255, 0);
+    border-radius: 15%;
+    border-color: rgb(255, 247, 247);
+    cursor: pointer;
+
+  }
+ 
