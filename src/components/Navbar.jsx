@@ -1,5 +1,5 @@
 import './Navbar.css';
-const Navbar = ({ saludo}) => {
+const Navbar = ({ saludo},{Carts}) => {
 
     return (
         <>
@@ -10,8 +10,8 @@ const Navbar = ({ saludo}) => {
                         <li className="item">home</li>
                         <li className="item">products</li>
                         <li className="item">about us</li>
-                <li className="item"> <button className='carrito' >carrito 20</button></li>
                     </ul>
+                    <div>{Carts}</div>
                 </div>
             </nav>
         <div>{saludo}</div>
