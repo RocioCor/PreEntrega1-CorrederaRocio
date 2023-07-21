@@ -1,20 +1,22 @@
-import './Navbar.css';
-const Navbar = ({ saludo},{Carts}) => {
+import './style/Navbar.css';
+import Carts from './Carts'; 
+import { NavLink } from 'react-router-dom';
+const Navbar = ({ saludo}) => {
 
     return (
-        <>
-            <nav>
-                <div className="navbar">
-                    <button className="navbar-toggle">R`imports</button>
-                    <ul className={`navbar-menu`}>
-                        <li className="item">home</li>
-                        <li className="item">products</li>
-                        <li className="item">about us</li>
-                    </ul>
-                    <div>{Carts}</div>
+            <nav className='NavBar'> 
+                <link to="/">
+                    <h3 >Ecommerce</h3>
+                </link>
+                <div className='Categorias'>
+                    <NavLink to={`/category/celular`} className={({isActive}) => isActive ? "ActiveOption": "Option"}/>
+                    <NavLink to={`/category/celularg40`} className={({isActive}) => isActive ? "ActiveOption": "Option"}/>
+                    <NavLink to={`/category/celularg30`} className={({isActive}) => isActive ? "ActiveOption": "Option"}/>
                 </div>
+              <Carts/>
             </nav>
-        <div>{saludo}</div>
-        </>);
+        
+    );
 }
 export default Navbar;
+/*NAVBAR*/

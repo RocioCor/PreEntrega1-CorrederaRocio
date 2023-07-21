@@ -1,0 +1,22 @@
+.Counter{
+    display: flex;
+    flex-direction: column;
+    border-style:groove;
+border-color: black;
+border-radius: 5%;
+width: 10%;
+height: 50%;
+}
+ .Controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Controls button{
+    width: 101%;
+    height: 20%;
+    margin-top: 50%;
+}
+.Counter button{
+    margin-left: 3%;
+}
